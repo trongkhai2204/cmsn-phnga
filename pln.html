@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Chúc mừng sinh nhật!</title>
+    <style>
+        body {
+            background-color: #fff3e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #e91e63;
+            font-size: 3em;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        p {
+            color: #555;
+            font-size: 1.2em;
+        }
+
+        .cake {
+            font-size: 5em;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="cake">🎂</div>
+    <h1>Chúc mừng sinh nhật!</h1>
+    <p>Chúc Phạm Lê Nga một ngày thật vui vẻ, hạnh phúc và tràn đầy yêu thương. Tuổi mới đỉnh nóc kịch trần 83 86 nhé!💖 💖 💖</p>
+    <button onclick="playMusic()">Phát nhạc 🎵</button>
+    <audio id="birthdaySong" src="https://www.orangefreesounds.com/wp-content/uploads/2016/06/Happy-birthday-song.mp3
+"></audio>
+
+    <script>
+        function playMusic() {
+            const audio = document.getElementById("birthdaySong");
+            audio.play();
+        }
+    </script>
+</body>
+</html>
